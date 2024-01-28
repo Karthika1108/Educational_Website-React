@@ -1,0 +1,31 @@
+.loginn{
+    border: 0px solid white;
+    background-color: white;
+    height: 450px;
+    width: 700px;
+    margin-top: -150px;
+    margin-left: 300px;
+    position: relative;
+    border-radius: 20px;
+    filter: drop-shadow(12px 12px 12px  gray);
+    animation-name:form ;
+    animation-duration: 5s;
+ }
+ .loginImagee{
+    height: 450px;
+    width: 300px;
+    margin-top: 0px;
+    margin-left: 0px;
+    filter:blur(1px);
+    position: absolute;
+    border-radius: 20px 0px 0px 20px;
+
+}
+.secondhalf2{
+    height: 350px;
+    background-color:rgb(13, 192, 171) ;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    
+}
