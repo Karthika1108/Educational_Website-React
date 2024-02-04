@@ -11,7 +11,16 @@
     background-color: white;
 
 }
-
+.Csecondhalf{
+    border: 10px solid rgb(13, 192, 171);
+    height: 100;
+    background-color:rgb(13, 192, 171) ;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    row-gap: 120px;
+    align-items: center;
+}
 .courseNav a{
     text-decoration: none;
     color: white;
@@ -23,6 +32,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    row-gap: 120px;
 }
 .subcourse{
     margin-top: -100px;
@@ -34,7 +44,7 @@
     margin-left:14px;
     animation-name:box ;
     animation-duration: 3s;
-    animation-iteration-count: 10;
+    animation-iteration-count: 1;
     animation-fill-mode:linear;
     position: relative;
 }

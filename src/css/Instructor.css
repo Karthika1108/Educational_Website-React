@@ -20,7 +20,7 @@
       animation-name: item11;
       animation-duration: 5s;
       animation-iteration-count:1;
-      animation-timing-function:linear;
+      animation-timing-function:ease-in-out;
       position: relative;
       box-shadow: 0 4px 8px 0 rgba(14, 10, 10, 0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -34,14 +34,8 @@
            border-radius: 20px;
         }
         
-        25%{
-            transform:rotate(10deg);
-        }
         50%{
-                 transform: rotate(20deg);
-        }
-        75%{
-            transform: rotate(-20deg);
+                 transform: rotate(5deg);
         }
         100%{
             border-radius: 20px;

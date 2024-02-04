@@ -9,7 +9,7 @@ function Main(){
         <div className="back">
             <Header />   
         <div className="top1">Find Course and Enjoyyy</div>
-        <div className="secondhalf">
+        <div className="Csecondhalf">
         <div className="courseNav">
             <div className="subcourse">
                 < img className="box" src={box}></img>
