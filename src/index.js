@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css';
 import App from './javascript/App';
+
 //import reportWebVitals from './public/javascript/reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

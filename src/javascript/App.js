@@ -9,6 +9,7 @@ import SignUp from './SignUp';
 import Login from './Login'
 import  ReactDOM  from "react";
 import Instructor from './Instructor';
+import Register from './Register';
 import Front from './Front';
 import { BrowserRouter ,  Route, Routes ,Link, Router } from "react-router-dom";
 function App() {
@@ -26,6 +27,8 @@ function App() {
       <Route path="/Instructor" element={<Instructor/>}></Route>
       <Route path="/Login" element={<Login/>}></Route>
       <Route path="/SignUp" element={<SignUp/>}></Route>
+      
+      <Route path="/Register" element={<Register/>}></Route>
     </Routes>
     </BrowserRouter>
     </div>

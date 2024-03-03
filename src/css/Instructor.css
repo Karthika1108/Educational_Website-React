@@ -29,18 +29,18 @@
     border: 2px solid white;
 }
 
-@keyframes item11{
+/* @keyframes item11{
         0%{
            border-radius: 20px;
         }
         
         50%{
                  transform: rotate(5deg);
-        }
+        }   
         100%{
             border-radius: 20px;
         }
-}
+} */
 .tit{
     margin-top: 0px;
     font-size: 30px;

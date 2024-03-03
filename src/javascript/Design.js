@@ -18,41 +18,49 @@ function Main(){
             <div className="container" >
                 <div className="item" > 
                  <img className="img1" src={html}></img>
-                 <div className="cont">Course Name : Full HTML <br></br>Course Duration : 10hours<br></br>Mentor : Mr James </div>
+                 <div className="cont">Course Name : Full HTML <br></br>Course Duration : 10hours<br></br>Mentor : Mr James  <br></br>&#x20B9;599 <span style={{fontWeight:100}}> &#x20B9;<del>3999</del></span><br></br>
+                 <button className="b">Register </button></div>
                 </div>
                 <div className="item">
                 <img className="img1" src={css}></img>
-                 <div className="cont">Course Name : Basic CSS <br></br>Course Duration : 12hours<br></br>Mentor : Mr John </div>
+                 <div className="cont">Course Name : Basic CSS <br></br>Course Duration : 12hours<br></br>Mentor : Mr John  <br></br>&#x20B9;599 <span style={{fontWeight:100}}> &#x20B9;<del>3999</del></span><br></br>
+                 <button className="b">Register </button></div>
                 
                 </div>
                 <div className="item" >
                 <img className="img1" src={js}></img>
-                 <div className="cont">Course Name :  JavaScript <br></br>Course Duration : 10hours<br></br>Mentor : Mr Malvik </div>
+                 <div className="cont">Course Name :  JavaScript <br></br>Course Duration : 10hours<br></br>Mentor : Mr Malvik  <br></br>&#x20B9;599 <span style={{fontWeight:100}}> &#x20B9;<del>3999</del></span><br></br>
+                 <button className="b">Register </button></div>
                 
                 </div>
                 <div className="item" >
                 <img className="img1" src={html2}></img>
-                 <div className="cont">Course Name : HTML+CSS <br></br>Course Duration : 18hours<br></br>Mentor : Mr Vimal </div>
+                 <div className="cont">Course Name : HTML+CSS <br></br>Course Duration : 18hours<br></br>Mentor : Mr Vimal  <br></br>&#x20B9;599 <span style={{fontWeight:100}}> &#x20B9;<del>3999</del></span><br></br>
+                 <button className="b">Register </button></div>
                 
                 </div>
                 <div className="item">
                 <img className="img1" src={js}></img>
-                 <div className="cont">Course Name : Medium JS <br></br>Course Duration : 20hours<br></br>Mentor : Mr Kamal </div>
+                 <div className="cont">Course Name : Medium JS <br></br>Course Duration : 20hours<br></br>Mentor : Mr Kamal <br></br>&#x20B9;599 <span style={{fontWeight:100}}> &#x20B9;<del>3999</del></span> <br></br>
+                 <button className="b">Register </button></div>
                 
                 </div>
                 <div className="item" >
                 <img className="img1" src={js}></img>
-                 <div className="cont">Course Name :Advance JS  <br></br>Course Duration : 17hours<br></br>Mentor : Mr Franklin </div>
+                 <div className="cont">Course Name :Advance JS  <br></br>Course Duration : 17hours<br></br>Mentor : Mr Franklin <br></br>&#x20B9;599 <span style={{fontWeight:100}}> &#x20B9;<del>3999</del></span><br></br>
+                 <button className="b">Register </button> </div>
                 
                 </div>
                 <div className="item" >
                 <img className="img1" src={front}></img>
-                 <div className="cont">Course Name : React <br></br>Course Duration : 20hours<br></br>Mentor : Mr Brown </div>
+                 <div className="cont">Course Name : React <br></br>Course Duration : 20hours<br></br>Mentor : Mr Brown  <br></br>&#x20B9;599 <span style={{fontWeight:100}}> &#x20B9;<del>3999</del></span><br></br>
+                 <button className="b">Register </button></div>
                 
                 </div>
                 <div className="item" >
                 <img className="img1" src={html}></img>
-                 <div className="cont">Course Name : Advance CSS <br></br>Course Duration : 10hours<br></br>Mentor : Mr James </div>
+                 <div className="cont">Course Name : Advance CSS <br></br>Course Duration : 10hours<br></br>Mentor : Mr James  <br></br>&#x20B9;599 <span style={{fontWeight:100}}> &#x20B9;<del>3999</del></span><br></br>
+                 <button className="b">Register </button></div>
                 
                 </div>
                

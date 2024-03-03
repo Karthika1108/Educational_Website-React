@@ -1,11 +1,40 @@
-import react from 'react';
+import react, { useState } from 'react';
 import  '../css/SignUp.css';
 import Header from './Header';
 import Footer from './Footer';
 import loginImage from '../images/loginImage.jpg';
 import {Link} from 'react-router-dom';
 import '../css/Login.css'
+import axios from 'axios';
+
+
 function Main(){
+  const [username,setName]=useState();
+  const [phone,setPhone]=useState();
+  const [email,setEmail]=useState();
+  const [password,setPassword]=useState();
+  async function submit(e){
+    e.preventDefault();
+    try{
+     await axios.post("http://localhost:8001/signup",{
+      username,phone,email,password
+     })
+     .then(res=>{
+      if(res.data==='exists'){
+        alert("Account already exists");
+      }
+      else if(res.data==='inserted'){
+        alert("Account create succesfully");
+      }
+      else{
+        alert("Failed");
+      }
+     })
+    }catch(err){
+      console.log(err);
+    }
+  }
+  
     return (
         <div>
             <Header/>
@@ -16,29 +45,26 @@ function Main(){
                     <img className='loginImagee' src={loginImage}></img>
                     <div className='loginForm'>
                         <div className='formTop'>Signup</div>
-                        <form action='' method=''>
+                        <form  action='signup' method='post'>
                           <div>
-                            <input type='text' id='username' name='username' placeholder='UserName'></input>
+                            <input onChange={(e)=>setName(e.target.value)} type='text' id='username' name='username' placeholder='UserName'></input>
                             <div className='error'></div>
                           </div>
                           <div>
-                            <input type='Email' id='email' name='email' placeholder='Email'></input>
+                            <input onChange={(e)=>setEmail(e.target.value)} type='Email' id='email' name='email' placeholder='Email'></input>
                             <div className='error'></div>
                           </div>
                           <div>
-                            <input type='tel' id='phone' name='phone' placeholder='Mobile Number'></input>
+                            <input onChange={(e)=>setPhone(e.target.value)} type='tel' id='phone' name='phone' placeholder='Mobile Number'></input>
                             <div className='error'></div>
                           </div>
                           <div>
-                            <input type='password' id='password' name='password' placeholder='Password'></input>
+                            <input onChange={(e)=>setPassword(e.target.value)} type='password' id='password' name='password' placeholder='Password'></input>
                             <div className='error'></div>
                           </div>
+              
                           <div>
-                            <input type='password' id='Cpassword' name='Cpassword' placeholder='Confirm Password'></input>
-                            <div className='error'></div>
-                          </div>
-                          <div>
-                            <button type='submit' value='submit'>Submit</button>
+                            <button type='submit'onClick={submit} value='submit'>Submit</button>
                           </div>
                         <div className='sign'>
                             Already have an account?<Link to="/Login">Login</Link>
